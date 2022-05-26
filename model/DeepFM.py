@@ -1,5 +1,9 @@
-from utils.utils import create_dataset, Trainer
-from layer.layer import Embedding, FeaturesEmbedding, EmbeddingsInteraction, MultiLayerPerceptron
+import sys
+sys.path.append("../utils")
+sys.path.append("../layer")
+
+from utils import create_dataset, Trainer
+from layer import Embedding, FeaturesEmbedding, EmbeddingsInteraction, MultiLayerPerceptron
 import torch
 import torch.nn as nn
 import torch.optim as optim
